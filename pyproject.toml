@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rxnsmiles2rinchi"
+version = "0.1.0"
+authors = [
+    { name="Your Name", email="your@email.com" }
+]
+description = "Python wrapper for the IUPAC RInChI library"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "rdkit"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: IUPAC-InChI Trust License",
+    "Operating System :: OS Independent"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["rxnsmiles2rinchi"]
+
+[tool.setuptools.package-data]
+"pyrinchi" = ["bin/**/*"]
