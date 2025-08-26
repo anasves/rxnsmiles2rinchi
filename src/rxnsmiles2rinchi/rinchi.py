@@ -40,6 +40,9 @@ import platform
 from ctypes import *
 from rdkit import Chem
 
+from rdkit import RDLogger
+logger = RDLogger.logger()
+logger.setLevel(RDLogger.ERROR)
 
 class RInChI():
 	def __init__(self):
