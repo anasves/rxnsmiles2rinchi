@@ -1,5 +1,7 @@
 # rxnsmiles2rinchi
 
+Arichived repository, the active version can be found at [SIB github](https://github.com/sib-swiss/rxnsmiles2rinchi)
+
 A Python wrapper for the IUPAC RInChI library, using ctypes.
 
 ## Install
